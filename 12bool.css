@@ -22,8 +22,12 @@ float: left;
 /* mobile view */
 @media screen and (max-width: 767px) {
 
-  [background="grey"]{
-    padding: 10px 5px;
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right,
+  #lezioni .row > .left, #lezioni .row > .right{
+   float: none;
+   width: 100%;
   }
 
   .col-xs-1{
