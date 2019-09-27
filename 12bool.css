@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.container{
+  max-width: 1170px;
+  margin: 0 auto;;
+}
+
+.container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 /* column rules */
 [class*="col-"] {
 float: left;
@@ -11,6 +21,10 @@ float: left;
 
 /* mobile view */
 @media screen and (max-width: 767px) {
+
+  [background="grey"]{
+    padding: 10px 5px;
+  }
 
   .col-xs-1{
     width: calc(( 100% / 12) * 1);
@@ -114,6 +128,10 @@ float: left;
 /* tablet view */
 @media screen and (min-width: 768px) and (max-width: 991px){
 
+  [background="grey"]{
+    padding: 10px 5px;
+  }
+
   .col-md-1{
     width: calc(( 100% / 12) * 1);
   }
@@ -215,6 +233,10 @@ float: left;
 
 /* pc view */
 @media screen and (min-width: 992px){
+
+  [background="grey"]{
+    padding: 10px 5px;
+  }
 
   .col-lg-1{
     width: calc(( 100% / 12) * 1);
